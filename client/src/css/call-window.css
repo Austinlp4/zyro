@@ -16,7 +16,6 @@
 
 .call-window:active .video-control{
     z-index: auto;
-    animation: in-fadeout 3s ease;
 }
 
 .call-window .video-control {
@@ -49,9 +48,4 @@
     height: 100%;
 }
 
-@keyframes in-fadeout{
-    0% {opacity: 1}
-	75% {opacity: 1}
-	100% {opacity: 0}
-}
 
