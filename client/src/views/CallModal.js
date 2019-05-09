@@ -4,13 +4,14 @@ import classnames from 'classnames';
 import '../css/call-modal.css';
 
 class CallModal extends Component {
+
   acceptWithVideo(video) {
     const config = { audio: true, video };
     return () => this.props.startCall(false, this.props.callFrom, config);
   }
 
   render() {
-    return (
+    return (   
       <div className={classnames('call-modal', this.props.status)}>
         <p>
           <span className="caller">{this.props.callFrom}</span> is calling ...
@@ -28,6 +29,7 @@ class CallModal extends Component {
           onClick={this.props.rejectCall}
         >Hangup</button>
       </div>
+      
     );
   }
 }

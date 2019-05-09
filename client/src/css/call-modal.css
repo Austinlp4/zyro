@@ -9,7 +9,7 @@
     z-index: 6;
 }
 
-.call-modal:active {
+.call-modal .active {
     display: block;
     z-index: 10;
 }

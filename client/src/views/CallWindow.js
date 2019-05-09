@@ -90,10 +90,10 @@ class CallWindow extends Component {
 
 CallWindow.propTypes = {
   status: PropTypes.string.isRequired,
-  localSrc: PropTypes.object, // eslint-disable-line
-  peerSrc: PropTypes.object, // eslint-disable-line
-  config: PropTypes.object, // eslint-disable-line
-  mediaDevice: PropTypes.object, // eslint-disable-line
+  localSrc: PropTypes.object, 
+  peerSrc: PropTypes.object, 
+  config: PropTypes.object, 
+  mediaDevice: PropTypes.object, 
   endCall: PropTypes.func.isRequired
 };
 

@@ -9,7 +9,7 @@
     background-color: black;
 }
 
-.call-window:active{
+.call-window .active{
     opacity: 1;
     z-index: auto;
 }
