@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'proptypes';
 import classnames from 'classnames';
+import '../css/call-modal.css';
 
 class CallModal extends Component {
   acceptWithVideo(video) {
@@ -15,17 +16,17 @@ class CallModal extends Component {
           <span className="caller">{this.props.callFrom}</span> is calling ...
         </p>
         <button
-          className="btn-action fa fa-video-camera"
+          className="btn-action"
           onClick={this.acceptWithVideo(true)}
-        />
+        >Video</button>
         <button
-          className="btn-action fa fa-phone"
+          className="btn-action"
           onClick={this.acceptWithVideo(false)}
-        />
+        >Phone</button>
         <button
-          className="btn-action hangup fa fa-phone"
+          className="btn-action hangup"
           onClick={this.props.rejectCall}
-        />
+        >Hangup</button>
       </div>
     );
   }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'proptypes';
 import classnames from 'classnames';
 import _ from 'lodash';
+import '../css/call-window.css';
 
 class CallWindow extends Component {
   constructor(props) {
@@ -78,7 +79,7 @@ class CallWindow extends Component {
         <div className="video-control">
           {this.renderControlButtons()}
           <button
-            className="btn-action hangup fa fa-phone"
+            className="btn-action hangup"
             onClick={() => this.props.endCall(true)}
           />
         </div>

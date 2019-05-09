@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'proptypes';
+import '../css/main-window.css';
 
 let friendID;
 
@@ -35,13 +36,13 @@ class MainWindow extends Component {
           />
           <div>
             <button
-              className="btn-action fa fa-video-camera"
+              className="btn-action"
               onClick={this.callWithVideo(true)}
-            />
+            >Video</button>
             <button
-              className="btn-action fa fa-phone"
+              className="btn-action"
               onClick={this.callWithVideo(false)}
-            />
+            >Phone</button>
           </div>
         </div>
       </div>

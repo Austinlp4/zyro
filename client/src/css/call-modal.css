@@ -1,0 +1,35 @@
+.call-modal {
+    position: absolute;
+    width: 400px;
+    padding: 20px;
+    left: calc(50vw - 200px);
+    top: calc(50vh - 60px);
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+
+.call-modal:active {
+    display: block;
+    z-index: 10;
+    animation: blinking 3s infinite linear;
+}
+
+.call-modal .btn-action:not(.hangup){
+    background-color: green;
+}
+
+.call-modal span.caller {
+    color: blue;
+}
+
+.call-modal p {
+    font-size: 1.5em;
+}
+
+@keyframes blinking{
+    25% {transform: scale(0.96)}
+	50% {transform: scale(1)}
+	75% {transform: scale(0.96)}
+	100% {transform: scale(1)}
+}
