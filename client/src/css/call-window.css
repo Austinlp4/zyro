@@ -4,9 +4,9 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    opacity: 0;
-    z-index: -1;
-
+    opacity: 1;
+    z-index: 5;
+    background-color: black;
 }
 
 .call-window:active{
