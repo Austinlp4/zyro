@@ -1,6 +1,9 @@
-.main-window{
+/* .main-window{
     padding-top: 80px;
     font-size: 1.75em;
+    color: white;
+    z-index: 20;
+
 }
 
 .btn-action{
@@ -26,9 +29,13 @@
 txt-clientId{
     height: 40px;
 	margin: 40px auto 0px 10px;
-	color: black;
+	color: white;
 	font-size: 0.9em;
 	background-color: transparent;
 	border: none;
 	border-bottom: solid 1px black;
+} */
+
+.main-window{
+    color: white;
 }

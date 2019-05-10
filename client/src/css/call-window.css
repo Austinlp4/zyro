@@ -1,12 +1,13 @@
-.call-window{
+/* .call-window{
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     opacity: 1;
-    z-index: 5;
-    background-color: black;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
 }
 
 .call-window .active{
@@ -30,22 +31,46 @@
 
 .call-window .video-control:hover{
     opacity: 1;
+} */
+
+/* .call-window video{
+    position: absolute;
+} */
+
+.call-window{
+    max-width: 1266px;
+    margin: 0 auto;
+    position: relative;
 }
 
-.call-window video{
+.call-window:active .video-control{
+    opacity: 0;
+}
+
+.call-window .video-control {
     position: absolute;
+    bottom: 20px;
+    height: 72px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    z-index: -1;
 }
 
 #localVideo{
-    bottom: 0;
+    bottom: 2;
     right: 0;
     width: 20%;
     height: 20%;
+    position: absolute;
+    transform: scaleX(-1);
 }
 
 #peerVideo {
     width: 100%;
     height: 100%;
-}
+    max-width: 1266px;
+    transform: scaleX(-1);
+} 
 
 

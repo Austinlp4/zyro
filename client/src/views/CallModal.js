@@ -13,6 +13,7 @@ class CallModal extends Component {
   render() {
     return (   
       <div className={classnames('call-modal', this.props.status)}>
+      <div>
         <p>
           <span className="caller">{this.props.callFrom}</span> is calling ...
         </p>
@@ -28,6 +29,7 @@ class CallModal extends Component {
           className="btn-action hangup"
           onClick={this.props.rejectCall}
         >Hangup</button>
+        </div>
       </div>
       
     );

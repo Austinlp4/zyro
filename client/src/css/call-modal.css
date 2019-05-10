@@ -1,4 +1,4 @@
-.call-modal {
+/* .call-modal {
     position: absolute;
     width: 400px;
     padding: 20px;
@@ -24,4 +24,8 @@
 
 .call-modal p {
     font-size: 1.5em;
+} */
+
+.call-modal{
+    color: white;
 }
