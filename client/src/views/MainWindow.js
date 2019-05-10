@@ -19,14 +19,13 @@ class MainWindow extends Component {
     document.title = `${clientId} - VideoCall`;
     return (
       <div className="container main-window">
-        <div>
+        <div className='yourid'>
           <h3>
-            Hi, your ID is
+            Hi, your ID is:
             <input type="text" className="txt-clientId" value={clientId} />
           </h3>
-          <h4>Get started by calling a friend below</h4>
         </div>
-        <div>
+        <div className='friendId'>
           <input
             type="text"
             className="txt-clientId"
@@ -36,11 +35,11 @@ class MainWindow extends Component {
           />
           <div>
             <button
-              className="btn-action"
+              className="btn-action call-video"
               onClick={this.callWithVideo(true)}
             >Video</button>
             <button
-              className="btn-action"
+              className="btn-action call-phone"
               onClick={this.callWithVideo(false)}
             >Phone</button>
           </div>

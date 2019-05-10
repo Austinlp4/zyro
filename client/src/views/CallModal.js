@@ -18,11 +18,11 @@ class CallModal extends Component {
           <span className="caller">{this.props.callFrom}</span> is calling ...
         </p>
         <button
-          className="btn-action"
+          className="btn-action video-action"
           onClick={this.acceptWithVideo(true)}
         >Video</button>
         <button
-          className="btn-action"
+          className="btn-action phone-action"
           onClick={this.acceptWithVideo(false)}
         >Phone</button>
         <button

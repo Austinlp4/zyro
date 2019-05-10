@@ -28,4 +28,33 @@
 
 .call-modal{
     color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.call-modal button{
+    border-radius: 20px;
+    height: 40px;
+    width: 70px;
+    border: none;
+    margin: 0px 30px;
+    text-align: center;
+    background-color: rgb(40,40,40);
+    color: white;
+}
+
+.call-modal .video-action, .call-modal .phone-action{
+    border: 2px solid green;
+}
+
+.call-modal .video-action:hover, .call-modal .phone-action:hover{
+    background-color: green;
+}
+
+.call-modal .hangup{
+    border: 2px solid red;
+}
+
+.call-modal .hangup:hover{
+    background-color: red;
 }

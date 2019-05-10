@@ -36,6 +36,53 @@ txt-clientId{
 	border-bottom: solid 1px black;
 } */
 
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .main-window{
     color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.friendId{
+    display: flex;
+    margin: 20px 0px 0px 100px;
+}
+
+.friendId input {
+    height: 20px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    margin-right: 20px;
+}
+
+.friendId .call-video, .friendId .call-phone{
+    border-radius: 20px;
+    height: 40px;
+    width: 70px;
+    border: 2px solid green;
+    margin: 0px 10px;
+    text-align: center;
+    background-color: rgb(40,40,40);
+    color: white;
+}
+
+.friendId .call-video:hover, .friendId .call-phone:hover{
+    background-color: green;
+}
+
+.yourid{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+.yourid input {
+    margin-left: 20px;
+    height: 20px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    border-bottom: 2px solid white;
 }

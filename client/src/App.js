@@ -5,6 +5,7 @@ import PeerConnection from './PeerConnection/PeerConnection';
 import MainWindow from './views/MainWindow';
 import CallWindow from './views/CallWindow';
 import CallModal from './views/CallModal';
+import './App.css';
 
 class App extends Component {
   constructor(props) {
@@ -68,7 +69,10 @@ class App extends Component {
 
   render() {
     return (
-      <div >
+      <div className='app-container'>
+        <div className='nav'>
+          <h1>Zyro</h1>
+        </div>
         <MainWindow
           clientId={this.state.clientId}
           startCall={this.startCallHandler}

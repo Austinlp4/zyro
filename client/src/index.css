@@ -19,3 +19,11 @@ code {
 input {
 	outline: none;
 }
+
+html{
+  height: 100vh;
+}
+
+#root{
+  height: 100vh;
+}
