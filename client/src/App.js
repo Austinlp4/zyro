@@ -6,6 +6,7 @@ import MainWindow from './views/MainWindow';
 import CallWindow from './views/CallWindow';
 import CallModal from './views/CallModal';
 import './App.css';
+import zyro from './zyro.png';
 
 class App extends Component {
   constructor(props) {
@@ -71,7 +72,7 @@ class App extends Component {
     return (
       <div className='app-container'>
         <div className='nav'>
-          <h1>Zyro</h1>
+          <img src={zyro} alt="" style={{ width: '150px', height: 'auto' }}/>
         </div>
         <MainWindow
           clientId={this.state.clientId}
